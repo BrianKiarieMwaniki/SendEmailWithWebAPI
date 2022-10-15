@@ -29,7 +29,7 @@ namespace SendEmailWithWebAPI.Controllers
             using var smtp = new SmtpClient();
 
             smtp.Connect("smtp.ethereal.email",port:587, SecureSocketOptions.StartTls);
-            smtp.Authenticate("richie.strosin@ethereal.email", "sSWj7j9TKxyNUK6gqU");
+            smtp.Authenticate("daisy58@ethereal.email", "2btGgXwgCJSfrE3v1X");
             smtp.Send(email);
 
             smtp.Disconnect(true);
